@@ -1,0 +1,29 @@
+{
+  "name": "etnbuddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r00t1000/etnbuddy.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/r00t1000/etnbuddy/issues"
+  },
+  "homepage": "https://github.com/r00t1000/etnbuddy#readme",
+  "dependencies": {
+    "electron-store": "^1.3.0",
+    "extract-zip": "^1.6.6",
+    "http": "0.0.0",
+    "menubar": "^5.2.3",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "electron": "^1.7.12"
+  }
+}

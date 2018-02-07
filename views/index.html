@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../assets/styling/uikit.min.css">
+  <link rel="stylesheet" href="../assets/styling/uikit-rtl.min.css">
+  <title>ETNBuddy</title>
+  <style>
+  html {
+    background-color: #222222 !important;
+  }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div>
+      <div>
+        <div class="uk-card uk-card-secondary uk-card-body">
+          <h3 class="uk-card-title"><center><span uk-icon="bolt"></span> ETNBuddy</center></h3>
+          <div class="uk-text-center uk-container-center" uk-grid>
+            <div><p><span uk-icon="tag"></span> <span id="usdprice">Loading...</span></p></div>
+            <div><p><span uk-icon="star"></span> <span id="rank">Loading...</span></p></div>
+            <div><p><span uk-icon="clock"></span> <span id="change">Loading...</span></p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-primary uk-card-body">
+          <h3 class="uk-card-title">Send</h3>
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-1-4@s">
+              <input id="addressSend" class="uk-input" type="text" placeholder="Address">
+            </div>
+            <div class="uk-width-1-4@s">
+              <input id="amount" class="uk-input" type="text" placeholder="Amount">
+            </div>
+            <div class="uk-width-1-4@s">
+              <button id="send" class="uk-button uk-button-default">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-secondary uk-card-body">
+          <h3 class="uk-card-title">Recieve</h3>
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-1-4@s">
+              <input id="address" class="uk-input" type="text" placeholder="Address" disabled value="Testing...">
+            </div>
+            <div class="uk-width-1-4@s">
+              <button id="copy" class="uk-button uk-button-default">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-primary uk-card-body">
+          <h3 class="uk-card-title">Wallet</h3>
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-text-center uk-container-center" uk-grid>
+              <div><p><span uk-icon="unlock"></span> Available: <span id="unlocked">0</span></p></div>
+              <div><p><span uk-icon="lock"></span> Unavailable: <span id="locked">0</span></p></div>
+            </div>
+            <div class="uk-text-center uk-container-center" uk-grid>
+              <div><p><span uk-icon="thumbnails"></span> Block: <span id="height">0</span></p></div>
+              <div><p><span uk-icon="thumbnails"></span> Target Block: <span id="target">0</span></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/scripts/main.js"></script>
+  <script src="../assets/scripts/uikit.min.js"></script>
+  <script src="../assets/scripts/uikit-icons.min.js"></script>
+</body>
+
+</html>
